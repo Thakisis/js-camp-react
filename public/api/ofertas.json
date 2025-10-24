@@ -1,0 +1,201 @@
+[{
+        "title": "Software Developer Senior",
+        "company": "Tech Solutions Inc.",
+        "location": "remoto",
+        "description": "Buscamos un desarrollador senior con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.",
+        "technology": ["javascript", "react", "nodejs", "fullstack"],
+        "experience": "mid",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Ingeniero de Software",
+        "company": "Tech Solutions Inc.",
+        "location": "remoto",
+        "description": "Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.",
+        "technology": ["javascript", "react", "nodejs", "frontend"],
+        "experience": "junior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Analista de Datos",
+        "company": "Data Driven Co.",
+        "location": "cdmx",
+        "description": "Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.",
+        "technology": ["sql", "python", "r", "fullstack"],
+        "experience": "mid",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Desarrollador de Aplicaciones Móviles",
+        "company": "Mobile Apps Ltd.",
+        "location": "gdl",
+        "description": "Buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.",
+        "technology": ["swift", "kotlin", "uxui", "mobile"],
+        "experience": "junior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Ingeniero de DevOps",
+        "company": "Cloud Services SA",
+        "location": "remoto",
+        "description": "Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.",
+        "technology": ["aws", "azure", "gcp", "backend"],
+        "experience": "senior",
+        "contract": "parttime"
+
+    },
+    {
+        "title": "Diseñador de Experiencia de Usuario",
+        "company": "Designers Inc.",
+        "location": "cdmx",
+        "description": "Buscamos un diseñador de experiencia de usuario con experiencia en el diseño de interfaces de usuario y experiencias de usuario. Se requiere conocimiento en UX/UI, prototipado y herramientas de diseño.",
+        "technology": ["uxui", "mobile"],
+        "experience": "junior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Arquitecto de Software",
+        "company": "Software Architects Inc.",
+        "location": "cdmx",
+        "description": "Buscamos un arquitecto de software con experiencia en diseño de arquitectura de software y arquitectura de datos. Se requiere conocimiento en diseño de arquitectura de software y arquitectura de datos.",
+        "technology": ["frontend"],
+        "experience": "senior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Ingeniero de Seguridad",
+        "company": "Security Inc.",
+        "location": "barc",
+        "description": "Buscamos un ingeniero de seguridad con experiencia en seguridad informática y ciberseguridad. Se requiere conocimiento en seguridad informática y ciberseguridad.",
+        "technology": ["cybersecurity", "backend"],
+        "experience": "junior",
+        "contract": "contract"
+
+    },
+    {
+        "title": "Ingeniero de Redes",
+        "company": "Network Engineers Inc.",
+        "location": "madrid",
+        "description": "Buscamos un ingeniero de redes con experiencia en diseño de redes y administración de redes. Se requiere conocimiento en diseño de redes y administración de redes.",
+        "technology": ["networking", "frontend"],
+        "experience": "junior",
+        "contract": "internship"
+
+    },
+    {
+        "title": "Ingeniero de Sistemas",
+        "company": "System Engineers Inc.",
+        "location": "madrid",
+        "description": "Buscamos un ingeniero de sistemas con experiencia en diseño de sistemas y administración de sistemas. Se requiere conocimiento en diseño de sistemas y administración de sistemas.",
+        "technology": ["it", "fullstack"],
+        "experience": "mid",
+        "contract": "parttime"
+
+    },
+    {
+        "title": "Desarrollador frontend Junior",
+        "company": "Web Innovate",
+        "location": "mty",
+        "description": "Buscamos un desarrollador frontend junior con conocimientos en HTML, CSS y JavaScript. Ideal para quienes desean crecer en el desarrollo de interfaces web modernas.",
+        "technology": ["html", "css", "javascript", "frontend"],
+        "experience": "junior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Ingeniero Backend Senior",
+        "company": "CloudTech Solutions",
+        "location": "remoto",
+        "description": "Se busca un ingeniero backend senior con experiencia en Node.js y bases de datos relacionales. Debe ser experto en la creación de APIs escalables.",
+        "technology": ["nodejs", "sql", "backend"],
+        "experience": "senior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Desarrollador Mobile Intern",
+        "company": "App Creators",
+        "location": "barc",
+        "description": "Oportunidad para pasantes en desarrollo móvil con conocimientos básicos en Swift o Kotlin. Participarás en proyectos de aplicaciones innovadoras.",
+        "technology": ["swift", "kotlin", "mobile"],
+        "experience": "junior",
+        "contract": "internship"
+
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "TechTrend Innovations",
+        "location": "madrid",
+        "description": "Buscamos un desarrollador full stack con experiencia en React y Node.js para trabajar en proyectos dinámicos en un entorno colaborativo.",
+        "technology": ["react", "nodejs", "fullstack"],
+        "experience": "mid",
+        "contract": "contract"
+
+    },
+    {
+        "title": "Desarrollador Backend Junior",
+        "company": "Innovatech Solutions",
+        "location": "gdl",
+        "description": "Buscamos un desarrollador backend junior con conocimientos en Python y Django para trabajar en proyectos de aplicaciones web escalables.",
+        "technology": ["python", "django", "backend"],
+        "experience": "junior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Especialista en Ciberseguridad",
+        "company": "CyberGuardians",
+        "location": "remoto",
+        "description": "Se busca un especialista en ciberseguridad con experiencia en análisis de vulnerabilidades y gestión de firewalls. Conocimientos en herramientas como Wireshark son un plus.",
+        "technology": ["cybersecurity", "backend"],
+        "experience": "mid",
+        "contract": "parttime"
+
+    },
+    {
+        "title": "Desarrollador Full Stack Senior",
+        "company": "NextGen Tech",
+        "location": "mty",
+        "description": "Buscamos un desarrollador full stack senior con experiencia en Angular, Node.js y bases de datos NoSQL como MongoDB para liderar proyectos innovadores.",
+        "technology": ["angular", "nodejs", "mongodb", "fullstack"],
+        "experience": "senior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Diseñador UX/UI",
+        "company": "Creative Designs",
+        "location": "madrid",
+        "description": "Oportunidad para un diseñador UX/UI con experiencia en herramientas como Figma y Adobe XD. Participarás en el diseño de interfaces para aplicaciones móviles y web.",
+        "technology": ["uxui", "mobile"],
+        "experience": "mid",
+        "contract": "contract"
+
+    },
+    {
+        "title": "Ingeniero Mobile Senior",
+        "company": "Mobile Pioneers",
+        "location": "cdmx",
+        "description": "Buscamos un ingeniero móvil senior con experiencia en desarrollo de aplicaciones nativas para iOS y Android, utilizando Swift y Kotlin.",
+        "technology": ["swift", "kotlin", "mobile"],
+        "experience": "senior",
+        "contract": "fulltime"
+
+    },
+    {
+        "title": "Analista de Redes Pasante",
+        "company": "NetSolutions",
+        "location": "barc",
+        "description": "Oportunidad para pasantes en ingeniería de redes con conocimientos básicos en configuración de routers y switches. Ideal para aprender en un entorno dinámico.",
+        "technology": ["networking", "frontend"],
+        "experience": "junior",
+        "contract": "internship"
+
+    }
+]
