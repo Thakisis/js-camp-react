@@ -19,8 +19,8 @@ function OfferCard({ title, company, location, description, technology }) {
 		</article>
 	);
 }
-function TechSpan(technology) {
-	return <span classCard="tag">{getTechName(technology)}</span>;
+function TechSpan({ technology }) {
+	return <span className="tag">{getTechName(technology)}</span>;
 }
 
 export default OfferCard;

@@ -253,8 +253,9 @@ nav a:nth-child(2) {
 .tag {
   background-color: var(--input-bg);
   color: var(--text-primary);
+  opacity: .6;
   padding: 0.25rem 0.5rem;
-  border-radius: 1rem;
+  border-radius: .4rem;
   font-size: 0.75rem;
   font-weight: 500;
   display: inline-block;
@@ -504,6 +505,12 @@ footer small {
       pointer-events: none;
     }
   }
+}
+
+#tags {
+  display: flex;
+  gap: 1rem;
+
 }
 
 .button-apply-job {
