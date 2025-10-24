@@ -479,6 +479,20 @@ footer small {
   gap: 1rem;
   margin-block: 2rem;
 
+  .dots {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    border-radius: 0.375em;
+    transition: all 0.3s;
+  }
+
   a {
     display: flex;
     align-items: center;
