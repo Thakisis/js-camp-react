@@ -4,7 +4,7 @@ import Search from "@/components/search";
 import Offers from "@/components/offers";
 import Pagination from "@/components/pagination";
 import { SearchProvider } from "@/providers/searchProvider";
-
+import ListPlaceHolder from "@/components/offers/list-placeholder";
 function OfertasTrabajo() {
 	return (
 		<div>
@@ -12,7 +12,7 @@ function OfertasTrabajo() {
 			<main>
 				<SearchProvider>
 					<Search />
-					<Suspense fallback={<div>Loading offers...</div>}>
+					<Suspense fallback={<ListPlaceHolder />}>
 						<Offers />
 						<Pagination />
 					</Suspense>
