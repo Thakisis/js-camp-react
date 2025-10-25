@@ -12,6 +12,7 @@ function OfertasTrabajo() {
 			<main>
 				<SearchProvider>
 					<Search />
+
 					<Suspense fallback={<ListPlaceHolder />}>
 						<Offers />
 						<Pagination />

@@ -264,6 +264,7 @@ nav a:nth-child(2) {
 /* Main Section */
 main>section:nth-child(1) {
   padding: 4rem 1rem 2rem 1rem;
+
 }
 
 main>section:nth-child(1) h2 {
@@ -350,20 +351,20 @@ form>div:nth-child(2) select {
   font-size: 0.9rem;
 }
 
-main>section:nth-child(2) {
+main>section {
   max-width: 80vw;
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
 }
 
-main>section:nth-child(2) h2 {
+main>section h2 {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
-main>section:nth-child(2)>article {
+main>section>article {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -379,19 +380,19 @@ main>section:nth-child(2)>article {
     box-shadow: 0 4px 6px -1px var(--primary-dark), 0 2px 4px -2px var(--primary-light);
 } */
 
-main>section:nth-child(2) article div {
+main>section article div {
   flex-grow: 1;
   margin-right: 1rem;
 }
 
-main>section:nth-child(2) article h3 {
+main>section article h3 {
   text-align: left;
   font-size: 1.25rem;
   font-weight: 600;
   text-wrap: balance;
 }
 
-main>section:nth-child(2) article div small {
+main>section article div small {
   text-align: left;
   color: var(--text-muted);
   font-family: inherit;
@@ -399,7 +400,7 @@ main>section:nth-child(2) article div small {
   padding: 0.5rem 0;
 }
 
-main>section:nth-child(2) article div p {
+main>section article div p {
   text-align: left;
   font-family: inherit;
   padding: 1rem 0;
@@ -563,7 +564,7 @@ footer small {
   small {
     display: flex;
     gap: 1rem;
-    color: red;
+
 
     >span {
       display: block;
@@ -587,7 +588,7 @@ footer small {
   #tags {
     display: flex;
     gap: 1rem;
-    color: red;
+
 
     margin-top: .3rem;
 
