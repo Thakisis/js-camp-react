@@ -1,10 +1,15 @@
 import { filterlist } from "@/constants/data-select";
 import Filter from "./filter";
-function FilterSearch() {
-	const filters = filterlist.map((select) => (
-		<Filter key={select.field} {...select} />
+function FilterSearch({ changeFilter, ...filters }) {
+	const filterelements = filterlist.map((select) => (
+		<Filter
+			key={select.field}
+			{...select}
+			changeFilter={changeFilter}
+			value={filters[select.field]}
+		/>
 	));
-	return <div>{filters}</div>;
+	return <div>{filterelements}</div>;
 }
 
 export default FilterSearch;

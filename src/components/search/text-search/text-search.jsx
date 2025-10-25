@@ -1,4 +1,7 @@
-function TextSearch() {
+function TextSearch({ changeFilter, value }) {
+	const handleChange = (e) => {
+		changeFilter("text", e.target.value);
+	};
 	return (
 		<div>
 			<svg
@@ -22,6 +25,8 @@ function TextSearch() {
 				id="txt-search"
 				placeholder="Buscar trabajos, empresas o habilidades"
 				className="search-field"
+				value={value || ""}
+				onChange={handleChange}
 			/>
 			<button type="submit" className="btn-search" id="btn-search">
 				Buscar

@@ -6,8 +6,8 @@ function OfferCard({ title, company, location, description, technology }) {
 		<TechSpan key={tech} technology={tech} />
 	));
 	return (
-		<article classCard="job-listing-card">
-			<div classCard="job-listing-content" id="contenido">
+		<article className="job-listing-card">
+			<div className="job-listing-content" id="contenido">
 				<h3>{title}</h3>
 				<small>
 					{company} | {locationName}
@@ -15,7 +15,7 @@ function OfferCard({ title, company, location, description, technology }) {
 				<p>{description}</p>
 				<div id="tags">{technologyList}</div>
 			</div>
-			<button classCard="button-apply-job">Aplicar</button>
+			<button className="button-apply-job">Aplicar</button>
 		</article>
 	);
 }

@@ -8,18 +8,21 @@ function Pagination({ total = 20, limit = 3 }) {
 	const clickHandler = (page) => {
 		setPage(page);
 	};
-	const listadopages = paginas.map((page) =>
+	const listadopages = paginas.map((page, index) =>
 		page !== "..." ? (
 			<PageButton
+				key={index}
 				page={page}
 				isActive={page === selPage}
 				onClick={clickHandler}
 			/>
 		) : (
-			<span className="dots">... </span>
+			<span key={index} className="dots">
+				...{" "}
+			</span>
 		)
 	);
-	return <nav class="pagination">{listadopages}</nav>;
+	return <nav className="pagination">{listadopages}</nav>;
 }
 
 export default Pagination;
