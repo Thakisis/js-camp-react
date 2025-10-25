@@ -48,5 +48,5 @@ export const filterlist = [
     { field: "location", label: "Ubicación", options: locations },
     { field: "experience", label: "Nivel de Experiencia", options: experienceLevels },
     { field: "technology", label: "Tecnología", options: technologies },
-    { field: "contract", label: "Tipo de Contrato", options: contractTypes }
+    //    { field: "contract", label: "Tipo de Contrato", options: contractTypes }
 ]

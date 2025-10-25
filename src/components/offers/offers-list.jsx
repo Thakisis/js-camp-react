@@ -1,8 +1,19 @@
 import { use } from "react";
 import OfferCard from "./offer-card";
+import Pagination from "../pagination";
 function OfferList({ promise }) {
-	const offerslist = use(promise);
-	return offerslist.map((offer) => <OfferCard key={offer.title} {...offer} />);
+	const { offers } = use(promise);
+	console.log(offers);
+	const offerslist = offers.map((offer) => (
+		<OfferCard key={offer.title} {...offer} />
+	));
+	return (
+		<>
+			{offerslist}
+
+			<Pagination />
+		</>
+	);
 }
 
 export default OfferList;

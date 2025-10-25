@@ -1,34 +1,18 @@
-export async function getOffers(url) {
+let cache = null;
+export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
+	console.log(filters);
+	console.log(url);
 	try {
-		const response = await fetch(url);
-		if (!response.ok) {
-			throw new Error(`Error al cargar ofertas: ${response.status}`);
-		}
+		const data = await fetchCached(url);
 
-		const data = await response.json();
-		return data;
-	} catch (error) {
-		console.error("Error al obtener las ofertas:", error);
-		return null;
-	}
-}
-
-//function para obtener ofertas con paginacion y filtros
-export async function getOffers2({ page = 1, limit = 4, ...filters } = {}) {
-	try {
-		const response = await fetch("/api/ofertas.json");
-		if (!response.ok) {
-			throw new Error(`Error al cargar ofertas: ${response.status}`);
-		}
-
-		const data = await response.json();
 		const datafilter = data.filter((job) => {
-			for (const [field, value] of Object.entries(filters)) {
-				if (value && job[field] !== value) {
-					return false;
-				}
-				return true;
-			}
+			const entries = Object.entries(filters);
+
+			if (entries.length === 0) return true;
+			return entries.reduce((match, [key, value]) => {
+				const matchValue = job[key].includes(value);
+				return match && matchValue;
+			}, true);
 		});
 
 		const start = (page - 1) * limit;
@@ -52,5 +36,24 @@ export async function getOffers2({ page = 1, limit = 4, ...filters } = {}) {
 			offers: [],
 			error: error.message,
 		};
+	}
+}
+
+async function fetchCached(url) {
+	console.log("fetchCached");
+	try {
+		if (cache) return cache;
+		console.log("cache null");
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Error al cargar ofertas: ${response.status}`);
+		}
+
+		const data = await response.json();
+		cache = data;
+		return data;
+	} catch (error) {
+		console.error("Error al obtener las ofertas:", error);
+		return [];
 	}
 }
