@@ -10,7 +10,7 @@ function Pagination() {
 	const paginas = calculatePageRange(page, totalPages);
 	console.log(paginas);
 	const listadopages = paginas.map((numPage, index) =>
-		page !== "..." ? (
+		numPage !== "..." ? (
 			<PageButton
 				key={index}
 				page={numPage}
