@@ -1,5 +1,11 @@
+import { pageSize } from "@/constants/pagination";
 let cache = null;
-export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
+export async function getOffers({
+	url,
+	page = 1,
+	limit = pageSize,
+	...filters
+} = {}) {
 	try {
 		const data = await fetchCached(url);
 
@@ -12,7 +18,8 @@ export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
 				return match && matchValue;
 			}, true);
 		});
-
+		// delay para ver el fallback de suspense
+		await sleep(0.5, 1.5);
 		const start = (page - 1) * limit;
 		const end = start + limit;
 		const paginatedData = datafilter.slice(start, end);
@@ -20,7 +27,6 @@ export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
 		return {
 			page,
 			limit,
-			total: datafilter.length,
 			totalPages: Math.ceil(datafilter.length / limit),
 			offers: paginatedData,
 		};
@@ -47,4 +53,8 @@ async function fetchCached(url) {
 	const data = await response.json();
 	cache = data;
 	return data;
+}
+function sleep(minSeconds, maxSeconds) {
+	const delay = (Math.random() * (maxSeconds - minSeconds) + minSeconds) * 1000;
+	return new Promise((resolve) => setTimeout(resolve, delay));
 }
