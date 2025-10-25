@@ -1,6 +1,9 @@
 import { filterlist } from "@/constants/data-select";
 import Filter from "./filter";
-function FilterSearch({ changeFilter, ...filters }) {
+import { use } from "react";
+import { SearchContext } from "@/providers/searchContext";
+function FilterSearch() {
+	const { filters, changeFilter } = use(SearchContext);
 	const filterelements = filterlist.map((select) => (
 		<Filter
 			key={select.field}

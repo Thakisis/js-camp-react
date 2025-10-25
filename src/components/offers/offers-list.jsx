@@ -1,19 +1,12 @@
 import { use } from "react";
+import { SearchContext } from "@/providers/searchContext";
 import OfferCard from "./offer-card";
-import Pagination from "../pagination";
-function OfferList({ promise }) {
-	const { offers } = use(promise);
-	console.log(offers);
-	const offerslist = offers.map((offer) => (
-		<OfferCard key={offer.title} {...offer} />
-	));
-	return (
-		<>
-			{offerslist}
+function OfferList() {
+	const { searchPromise } = use(SearchContext);
+	console.log(searchPromise);
+	const { offers } = use(searchPromise);
 
-			<Pagination />
-		</>
-	);
+	return offers.map((offer) => <OfferCard key={offer.title} {...offer} />);
 }
 
 export default OfferList;

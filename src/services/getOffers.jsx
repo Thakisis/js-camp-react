@@ -1,7 +1,5 @@
 let cache = null;
 export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
-	console.log(filters);
-	console.log(url);
 	try {
 		const data = await fetchCached(url);
 
@@ -27,7 +25,6 @@ export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
 			offers: paginatedData,
 		};
 	} catch (error) {
-		console.error("Error al obtener las ofertas:", error);
 		return {
 			page,
 			limit,
@@ -40,20 +37,14 @@ export async function getOffers({ url, page = 1, limit = 4, ...filters } = {}) {
 }
 
 async function fetchCached(url) {
-	console.log("fetchCached");
-	try {
-		if (cache) return cache;
-		console.log("cache null");
-		const response = await fetch(url);
-		if (!response.ok) {
-			throw new Error(`Error al cargar ofertas: ${response.status}`);
-		}
+	if (cache) return cache;
 
-		const data = await response.json();
-		cache = data;
-		return data;
-	} catch (error) {
-		console.error("Error al obtener las ofertas:", error);
-		return [];
+	const response = await fetch(url);
+	if (!response.ok) {
+		throw new Error(`Error al cargar ofertas: ${response.status}`);
 	}
+
+	const data = await response.json();
+	cache = data;
+	return data;
 }
